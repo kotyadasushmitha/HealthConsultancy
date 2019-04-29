@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Consulting</title>
+    <link rel="stylesheet" type="text/css" href="portal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+   
+    <script type="text/javascript">
+        function delRow(val)
+        {
+            document.getElementById(val).innerHTML="";
+        }
+        </script>
+         
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img class="img-responsive1" height="40" width="60"
+                src="health.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="insurance.html">Insurance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <form>
+            <button type="submit" class="btn btn-bt" formaction="index.html" style="float: right;">Logout</button>
+        </form>
+    </nav>
+
+
+    <header>
+        <h2>Booking Information</h2>
+    </header>
+
+    <hr>
+
+
+    <main>
+            <form action="EditPro.html" method="post" class="form-box">
+                    <div><table  style="margin-right: 0px" width="100%"><tr><td width="80%"></td><td width="20%"><button type="submit" class="btn btn-danger btn-lg" formaction="addbooking.html">Add Booking</button></td></tr> </table>    </div>
+                    <table width="100%"><tr id="tr1">
+                         <td width="60%"><section>
+                            <li>User Name : Durga Susmitha Kotyada</li>
+                            <li>Date : 04/07/2019</li>
+                            <li>Time : 11:00am to 1:00pm</li>
+                            <li>Doctor Name: Dr. Rebecca Baskins, MD</li>
+                            <li>Amount : 200$</li>
+                            <li>Appointment Number: 101000</li>
+                          </section></td>
+                          <td width="40%"><input type="button" class="btn btn-primary" onclick="delRow('tr1')" value="Delete"/>
+                            <button type="submit" class="btn btn-success" formaction="addbooking.html">Edit</button></td>
+                         
+                    </tr>
+             <tr>
+                 <td></br></td>
+             </tr>
+                    <tr id="tr2">
+                            <td width="60%"><section>
+                                    <li>User Name : Subhash</li>
+                                    <li>Date : 04/09/2019</li>
+                                    <li>Time : 11:00am to 1:00pm</li>
+                                    <li>Doctor Name: Dr. Rebecca Baskins, MD</li>
+                                    <li>Amount : 150$</li>
+                                    <li>Appointment Number: 101000</li>
+                             </section></td>
+                             <td width="40%"><input type="button" class="btn btn-primary" onclick="delRow('tr2')" value="Delete"/>
+                                <button type="submit" class="btn btn-success" formaction="addbooking.html">Edit</button></td></td>
+                       </tr>
+                    </table>
+                </div>
+                </form>
+                </main>
+
+                   
+
+</body>
+
+</html>
